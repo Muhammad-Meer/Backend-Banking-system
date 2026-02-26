@@ -1,4 +1,5 @@
 const usermodel = require('../models/model')
+const jwt = require('jsonwebtoken')
 
 
 
@@ -24,8 +25,7 @@ const usermodel = require('../models/model')
    })
 
 
-   
-
+   const jwttoken = jwt.sign({userId: user._id}, process.env.JWT_SECRET)
 }
 
 
