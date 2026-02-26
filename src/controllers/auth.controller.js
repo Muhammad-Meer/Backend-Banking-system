@@ -2,7 +2,7 @@ const usermodel = require('../models/model')
 const jwt = require('jsonwebtoken')
 
 
-
+/* post   /api/auth/register        */
 
  async function userregistercontroller(req , res ) {
 
