@@ -25,7 +25,13 @@ const jwt = require('jsonwebtoken')
    })
 
 
-   const jwttoken = jwt.sign({userId: user._id}, process.env.JWT_SECRET)
+   const jwttoken = jwt.sign({userId: createuser._id}, process.env.JWT_SECRET, {expiresIn: "5d"})
+
+   res.cookie("token",jwttoken)
+
+   res.status(201).json({
+    
+   })
 }
 
 
