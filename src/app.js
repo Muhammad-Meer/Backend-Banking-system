@@ -12,8 +12,13 @@ app.use(cookieparser())
 
 
 
-
+/* post   /api/auth/register        */
 app.use('/api/auth',authrouter)
+
+
+/* post   /api/auth/register        */
+app.use('/api/auth',authrouter)
+
 
 
 module.exports = app
