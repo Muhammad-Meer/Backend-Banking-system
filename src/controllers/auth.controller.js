@@ -30,7 +30,12 @@ const jwt = require('jsonwebtoken')
    res.cookie("token",jwttoken)
 
    res.status(201).json({
-    
+       userdeta: {
+        _id: createuser._id,
+        email: createuser.email,
+        name: createuser.name,
+       },
+       jwttoken
    })
 }
 
