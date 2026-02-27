@@ -40,4 +40,8 @@ const jwt = require('jsonwebtoken')
 }
 
 
-module.exports  = userregistercontroller
+async function userrlogincontroller(req , res) {
+  
+}
+
+module.exports  = {userregistercontroller,userrlogincontroller}
